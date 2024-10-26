@@ -11,7 +11,7 @@ let todos = [
     {id: 2, task: "Do laundry", completed: true}
 ];
 
-app.get("/", (req, res) => {
+app.get("/_health", (req, res) => {
     res.json({msg:"Hello World from docker containerization!",statusCode:200});
 });
 
