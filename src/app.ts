@@ -12,7 +12,7 @@ let todos = [
 ];
 
 app.get("/", (req, res) => {
-    res.send("Hello World");
+    res.json({msg:"Hello World from docker containerization!",statusCode:200});
 });
 
 
